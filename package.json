@@ -1,0 +1,45 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "Authentication microservice for social medial application",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "prettier": "prettier --check ./src/**/*.ts",
+    "prettier:fix": "prettier --write ./src/**/*.ts",
+    "start:dev": "nodemon src/index.ts",
+    "start": "echo starting prod server",
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "author": "Prajal Patidar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.0",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "@types/supertest": "^2.0.16",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.0.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  }
+}
